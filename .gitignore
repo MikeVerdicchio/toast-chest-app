@@ -1,0 +1,14 @@
+# Repository Settings
+.vscode/
+.env
+
+# Python
+__pycache__/
+*.pyc
+env/
+
+# Django
+mediafiles/
+staticfiles/
+postgres/
+*.sqlite3

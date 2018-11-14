@@ -1,0 +1,38 @@
+version: "3"
+services:
+  web:
+    build: .
+    restart: always
+    env_file:
+      - ./.env
+    command: >
+      sh -c "python3 manage.py migrate &&
+             python3 manage.py collectstatic --no-input &&
+             gunicorn --bind 0.0.0.0:8080 toast_chest.wsgi"
+    volumes:
+      - .:/www
+    ports:
+      - "8080:8080"
+    depends_on:
+      - nginx
+      - db
+
+  nginx:
+    image: "nginx"
+    restart: always
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./staticfiles:/static
+      - ./mediafiles:/media
+    ports:
+      - "80:80"
+
+  db:
+    image: "postgres:10.3-alpine"
+    restart: always
+    env_file:
+      - ./.env
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data

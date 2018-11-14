@@ -1,0 +1,12 @@
+body {
+    background-image: url("../images/chest.jpg");
+}
+
+p {
+    font-size: large;
+    font-weight: bold;
+}
+
+p.small {
+    font-size: medium;
+}

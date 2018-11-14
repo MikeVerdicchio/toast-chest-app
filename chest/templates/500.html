@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row text-center">
+    <hr>
+    <h1>Toast Chest</h1>
+    <hr>
+    <p>Woah, you found an error!<br>Please let me know at mikeverdicchio@gmail.com.</p>
+</div>
+
+<div class="row text-center">
+        <p><a href="{% url 'chest' %}">Take me home!</a></p>
+    </div>
+{% endblock %}

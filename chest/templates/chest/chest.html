@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row text-center">
+    <hr>
+    <h1>Toast Chest</h1>
+    <hr>
+    <p>Here's to friendship, here's to great times, and here's to when the Toast Chest isn't around.</p>
+</div>
+
+<div class="row text-center">
+    <form action="{% url 'chest' %}" method="post">
+        {% csrf_token %}
+        <input type="submit" class="btn btn-default btn-md" value="Get a Toast!" />
+    </form>
+</div>
+
+<div class="row text-center">
+    <p class="small">{{ toast.toast|linebreaks }}</p>
+</div>
+{% endblock %}
