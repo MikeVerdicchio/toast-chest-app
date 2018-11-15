@@ -7,6 +7,7 @@ services:
       - ./.env
     command: >
       sh -c "python3 manage.py migrate &&
+             python3 manage.py setupsuperuser &&
              python3 manage.py collectstatic --no-input &&
              gunicorn --bind 0.0.0.0:8080 toast_chest.wsgi"
     volumes:
