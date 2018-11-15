@@ -5,12 +5,15 @@ from chest.api import ToastSerializer
 
 
 def chest(request):
+    error = None
     if request.method == 'GET':
         toast = Toast.objects.none()
     elif request.method == 'POST':
         toast = get_and_update()
+        if not toast:
+            error = "No toasts available!"
 
-    return render(request, 'chest/chest.html', {'toast': toast})
+    return render(request, 'chest/chest.html', {'toast': toast, 'error': error})
 
 
 def api_get_random(request):

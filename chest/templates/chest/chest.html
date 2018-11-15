@@ -17,6 +17,11 @@
 </div>
 
 <div class="row text-center">
-    <p class="small">{{ toast.toast|linebreaks }}</p>
+    <br>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        {{ toast.toast|linebreaks }}
+    {% endif %}
 </div>
 {% endblock %}
