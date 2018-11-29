@@ -11,15 +11,13 @@ Environment Setup
 -----------------
 1. Rename **.env-example** to **.env** and adjust variables as needed
 2. Install Docker and Docker Compose
-3. Run the following commands to run a debug environment:
+3. Run the following command to run a debug environment:
     ```
-    docker-compose run web python3 manage.py createsuperuser (if not created already)
     docker-compose up
     ```
 
-4. Run the following commands for a production environment:
+4. Run the following command for a production environment:
     ```
-    docker-compose -f docker-compose.prod.yml run web python3 manage.py createsuperuser (if not created already)
     docker-compose -f docker-compose.prod.yml up
     ```
 
