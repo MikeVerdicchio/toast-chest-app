@@ -1,0 +1,416 @@
+[
+    {
+        "model": "chest.tag",
+        "pk": 1,
+        "fields": {
+            "created": "2017-11-21T04:23:02.604Z",
+            "updated": "2017-11-21T04:23:02.604Z",
+            "tag": "Health"
+        }
+    },
+    {
+        "model": "chest.tag",
+        "pk": 2,
+        "fields": {
+            "created": "2017-11-21T04:36:42.452Z",
+            "updated": "2017-11-21T04:36:42.452Z",
+            "tag": "Love"
+        }
+    },
+    {
+        "model": "chest.tag",
+        "pk": 3,
+        "fields": {
+            "created": "2017-11-21T04:36:46.387Z",
+            "updated": "2017-11-21T04:36:46.387Z",
+            "tag": "Friendship"
+        }
+    },
+    {
+        "model": "chest.tag",
+        "pk": 4,
+        "fields": {
+            "created": "2017-11-21T04:44:06.347Z",
+            "updated": "2017-11-21T04:44:06.347Z",
+            "tag": "Funny"
+        }
+    },
+    {
+        "model": "chest.tag",
+        "pk": 5,
+        "fields": {
+            "created": "2017-11-21T04:44:15.153Z",
+            "updated": "2017-11-21T04:44:15.154Z",
+            "tag": "Happiness"
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 1,
+        "fields": {
+            "created": "2017-11-19T04:04:35.503Z",
+            "updated": "2018-04-25T07:57:11.071Z",
+            "toast": "May you live as long as you like,\r\nand have all you like as long as you live.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 17,
+            "tags": [
+                1,
+                3
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 2,
+        "fields": {
+            "created": "2017-11-21T04:44:50.607Z",
+            "updated": "2018-04-24T05:17:29.275Z",
+            "toast": "Here's to you and here's to me,\r\nfriends may we always be!\r\nBut, if by chance we disagree,\r\nFuck you! Here's to me!",
+            "explicit": true,
+            "disabled": false,
+            "numUsed": 10,
+            "tags": [
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 3,
+        "fields": {
+            "created": "2017-11-21T04:45:12.985Z",
+            "updated": "2018-05-12T18:40:54.379Z",
+            "toast": "There are good ships,\u00a0and there are wood ships,\r\nthe ships that sail the sea.\r\nBut the best ships, are friendships,\r\nand may they always be.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 17,
+            "tags": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 4,
+        "fields": {
+            "created": "2017-11-21T04:45:34.773Z",
+            "updated": "2018-07-07T02:47:37.021Z",
+            "toast": "My friends are the best friends,\r\nloyal, willing and able.\r\nNow let\u2019s get to drinking!\r\nAll glasses off the table!",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 13,
+            "tags": [
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 5,
+        "fields": {
+            "created": "2017-11-21T04:45:51.935Z",
+            "updated": "2018-08-23T00:27:05.006Z",
+            "toast": "May we kiss whom we please,\r\nand please whom we kiss.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 19,
+            "tags": [
+                2,
+                5
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 6,
+        "fields": {
+            "created": "2017-11-21T04:46:19.700Z",
+            "updated": "2018-08-23T00:27:22.253Z",
+            "toast": "May neighbors respect you,\r\ntrouble neglect you,\r\nthe angels protect you,\r\nand heaven accept you.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 15,
+            "tags": [
+                5
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 7,
+        "fields": {
+            "created": "2017-11-21T04:46:34.006Z",
+            "updated": "2018-06-10T06:53:27.040Z",
+            "toast": "May the saddest day of your future be no worse than the happiest day of your past.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 18,
+            "tags": [
+                5
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 8,
+        "fields": {
+            "created": "2017-11-21T04:46:48.703Z",
+            "updated": "2018-06-10T06:53:41.440Z",
+            "toast": "May you have the hindsight to know where you've been,\r\nthe foresight to know where you are going,\r\nand the insight to know when you have gone too far.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 15,
+            "tags": [
+                5
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 9,
+        "fields": {
+            "created": "2017-11-21T04:46:58.170Z",
+            "updated": "2018-04-24T05:26:02.491Z",
+            "toast": "Here's to staying positive and testing negative.",
+            "explicit": true,
+            "disabled": false,
+            "numUsed": 7,
+            "tags": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 10,
+        "fields": {
+            "created": "2017-11-21T04:47:11.220Z",
+            "updated": "2018-07-24T19:09:13.592Z",
+            "toast": "To absent friends.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 12,
+            "tags": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 11,
+        "fields": {
+            "created": "2017-11-21T04:47:23.322Z",
+            "updated": "2018-08-23T00:27:06.054Z",
+            "toast": "Here's to those who've seen us at our best and seen us at our worst and can't tell the difference.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 12,
+            "tags": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 12,
+        "fields": {
+            "created": "2017-11-21T04:47:37.489Z",
+            "updated": "2018-08-23T00:27:26.485Z",
+            "toast": "May our sons have rich fathers and beautiful mothers.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 11,
+            "tags": [
+                2,
+                5
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 13,
+        "fields": {
+            "created": "2017-11-21T04:47:51.392Z",
+            "updated": "2018-04-24T05:27:10.895Z",
+            "toast": "To our wives and girlfriends,\r\nmay they never meet.",
+            "explicit": true,
+            "disabled": false,
+            "numUsed": 8,
+            "tags": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 14,
+        "fields": {
+            "created": "2017-11-21T04:48:17.607Z",
+            "updated": "2018-07-24T19:19:45.850Z",
+            "toast": "Here's to a long life and a happy one.\r\nA quick death and an easy one.\r\nA good girl and an honest one.\r\nA cold pint and another one.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 11,
+            "tags": [
+                1,
+                2,
+                5
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 15,
+        "fields": {
+            "created": "2017-11-21T04:48:29.623Z",
+            "updated": "2018-07-24T19:19:47.213Z",
+            "toast": "May we be in heaven half an hour before the devil knows we're dead.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 18,
+            "tags": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 16,
+        "fields": {
+            "created": "2017-11-21T04:48:49.826Z",
+            "updated": "2018-06-26T03:35:57.412Z",
+            "toast": "Here's to the nights we'll never remember\r\nwith the friends we'll never forget.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 12,
+            "tags": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 17,
+        "fields": {
+            "created": "2017-11-21T04:49:06.708Z",
+            "updated": "2018-04-24T05:26:58.994Z",
+            "toast": "We drink to those who love us,\r\nwe drink to those who don't.\r\nWe drink to those who fuck us,\r\nand fuck those who don't!",
+            "explicit": true,
+            "disabled": false,
+            "numUsed": 12,
+            "tags": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 18,
+        "fields": {
+            "created": "2017-11-21T04:49:26.068Z",
+            "updated": "2018-04-24T05:17:49.765Z",
+            "toast": "Life is a waste of time.\r\nTime is a waste of life.\r\nSo why not get wasted\r\nand have the time of our life.",
+            "explicit": true,
+            "disabled": false,
+            "numUsed": 9,
+            "tags": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 19,
+        "fields": {
+            "created": "2017-11-21T04:49:44.797Z",
+            "updated": "2017-12-07T04:09:07.310Z",
+            "toast": "Here's to honor.\r\nHere's to getting honor.\r\nHere's to staying honor.\r\nAnd if you can't cum in her, cum on her.",
+            "explicit": true,
+            "disabled": true,
+            "numUsed": 0,
+            "tags": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 20,
+        "fields": {
+            "created": "2017-11-21T04:50:07.931Z",
+            "updated": "2018-04-28T01:30:24.711Z",
+            "toast": "Here's to lying, cheating, stealing, and drinking.\r\nIf you're going to lie, lie for a friend.\r\nIt you're going to cheat, cheat death.\r\nIf you're going to steal, steal a heart.\r\nIf you're going to drink, drink with me.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 15,
+            "tags": [
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 21,
+        "fields": {
+            "created": "2017-11-21T04:50:25.607Z",
+            "updated": "2018-06-10T06:54:03.208Z",
+            "toast": "Out with the old, in with the new.\r\nCheers to the future, and all that we do.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 8,
+            "tags": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 22,
+        "fields": {
+            "created": "2017-11-21T04:50:38.765Z",
+            "updated": "2018-04-21T03:35:05.456Z",
+            "toast": "Here's to those who wish us well,\r\nand those that don't can go to hell.",
+            "explicit": true,
+            "disabled": false,
+            "numUsed": 11,
+            "tags": [
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 23,
+        "fields": {
+            "created": "2017-11-21T04:51:05.026Z",
+            "updated": "2018-08-23T00:27:01.660Z",
+            "toast": "To the ones that love us most,\r\nand the others who just hate,\r\nmay we always know the difference\r\nwhen they're standing in our face.",
+            "explicit": false,
+            "disabled": false,
+            "numUsed": 15,
+            "tags": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "chest.toast",
+        "pk": 24,
+        "fields": {
+            "created": "2017-11-21T04:51:28.455Z",
+            "updated": "2017-12-07T04:09:44.695Z",
+            "toast": "I'll drink to the girls who do!\r\nI'll drink to the girls who don't!\r\nBut, I won't drink to girls\r\nwho say they will and won't!",
+            "explicit": true,
+            "disabled": true,
+            "numUsed": 0,
+            "tags": [
+                4
+            ]
+        }
+    }
+]
