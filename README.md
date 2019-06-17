@@ -23,6 +23,16 @@ Environment Setup
 
 
 
+Deploying on Heroku
+-------------------
+This project also has the necessary configuration to run on Heroku. You can deploy to Heroku by creating a new app and attaching a Postgres instance. You must also set the following Config Vars:
+
+* DATABASE_URL (automatically set by Heroku)
+* DJANGO_SETTINGS_MODULE=toast_chest.heroku (to force Heroku settings)
+* SECRET_KEY (any key you want to use for Django)
+
+
+
 License
 -------
 The material in this repository is released under a GNU General Public License v2.0.
