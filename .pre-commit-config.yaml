@@ -1,0 +1,12 @@
+- repo: https://github.com/pre-commit/mirrors-isort
+  rev: v4.3.21
+  hooks:
+  - id: isort
+- repo: https://github.com/ambv/black
+  rev: 19.10b0
+  hooks:
+  - id: black
+- repo: https://github.com/pre-commit/pre-commit-hooks.git
+  rev: v2.4.0
+  hooks:
+  - id: flake8
