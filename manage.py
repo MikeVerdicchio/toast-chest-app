@@ -2,8 +2,8 @@
 import os
 import sys
 
-if __name__ == '__main__':
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'toast_chest.debug')
+if __name__ == "__main__":
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "toast_chest.debug")
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
