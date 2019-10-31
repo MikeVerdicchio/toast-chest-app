@@ -1,35 +1,34 @@
-from django.http import JsonResponse
 from django.shortcuts import render
+from django.views import View
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
-from chest.api import ToastSerializer
-from chest.models import Toast
-
-
-def chest(request):
-    error = None
-    if request.method == "GET":
-        toast = Toast.objects.none()
-    elif request.method == "POST":
-        toast = get_and_update()
-        if not toast:
-            error = "No toasts available!"
-
-    return render(request, "chest/chest.html", {"toast": toast, "error": error})
+from .models import Toast
+from .serializers import ToastSerializer
 
 
-def api_get_random(request):
-    toast = get_and_update()
-    if toast:
-        serializer = ToastSerializer(toast)
-        return JsonResponse(serializer.data, safe=False)
-    else:
-        return JsonResponse("No toasts available", safe=False)
-
-
-def get_and_update():
+def get_toast_and_increment():
     toast = Toast.objects.filter(disabled=False, explicit=False).order_by("?").first()
     if toast:
         toast.numUsed += 1
         toast.save()
 
     return toast
+
+
+class HomepageView(View):
+    template = "chest/chest.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template, {"toast": None})
+
+    def post(self, request, *args, **kwargs):
+        toast = get_toast_and_increment()
+        return render(request, self.template, {"toast": toast})
+
+
+class GetRandomView(APIView):
+    def get(self, request):
+        toast = get_toast_and_increment()
+        serializer = ToastSerializer(toast)
+        return Response(serializer.data)
