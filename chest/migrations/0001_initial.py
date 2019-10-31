@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ("updated", models.DateTimeField(auto_now=True)),
                 ("tag", models.CharField(max_length=20)),
             ],
-            options={"abstract": False,},
+            options={"abstract": False},
         ),
         migrations.CreateModel(
             name="Toast",
@@ -59,6 +59,6 @@ class Migration(migrations.Migration):
                 ),
                 ("tags", models.ManyToManyField(to="chest.Tag")),
             ],
-            options={"abstract": False,},
+            options={"abstract": False},
         ),
     ]
