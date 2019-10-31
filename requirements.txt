@@ -6,6 +6,6 @@ gunicorn==19.9.0
 psycopg2==2.7.5
 pytz==2018.3
 whitenoise==4.1
-black==19.10b0 
-flake8==3.7.9 
+black==19.10b0
+flake8==3.7.9
 isort==4.3.21
