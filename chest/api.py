@@ -1,15 +1,8 @@
-from rest_framework import serializers, viewsets
+from rest_framework import viewsets
 from rest_framework.response import Response
 
-from chest.models import Toast
-
-
-class ToastSerializer(serializers.ModelSerializer):
-    tags = serializers.StringRelatedField(many=True)
-
-    class Meta:
-        model = Toast
-        fields = "__all__"
+from .models import Toast
+from .serializers import ToastSerializer
 
 
 class ToastViewSet(viewsets.ReadOnlyModelViewSet):
