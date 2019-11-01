@@ -7,36 +7,58 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Tag',
+            name="Tag",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created', models.DateTimeField(auto_now_add=True)),
-                ('updated', models.DateTimeField(auto_now=True)),
-                ('tag', models.CharField(max_length=20)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created", models.DateTimeField(auto_now_add=True)),
+                ("updated", models.DateTimeField(auto_now=True)),
+                ("tag", models.CharField(max_length=20)),
             ],
-            options={
-                'abstract': False,
-            },
+            options={"abstract": False},
         ),
         migrations.CreateModel(
-            name='Toast',
+            name="Toast",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created', models.DateTimeField(auto_now_add=True)),
-                ('updated', models.DateTimeField(auto_now=True)),
-                ('toast', models.TextField(max_length=500)),
-                ('explicit', models.BooleanField(default=False, verbose_name='Explicit Language')),
-                ('disabled', models.BooleanField(default=False, verbose_name='Disabled')),
-                ('numUsed', models.IntegerField(default=0, verbose_name='Number of times used')),
-                ('tags', models.ManyToManyField(to='chest.Tag')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created", models.DateTimeField(auto_now_add=True)),
+                ("updated", models.DateTimeField(auto_now=True)),
+                ("toast", models.TextField(max_length=500)),
+                (
+                    "explicit",
+                    models.BooleanField(
+                        default=False, verbose_name="Explicit Language"
+                    ),
+                ),
+                (
+                    "disabled",
+                    models.BooleanField(default=False, verbose_name="Disabled"),
+                ),
+                (
+                    "numUsed",
+                    models.IntegerField(default=0, verbose_name="Number of times used"),
+                ),
+                ("tags", models.ManyToManyField(to="chest.Tag")),
             ],
-            options={
-                'abstract': False,
-            },
+            options={"abstract": False},
         ),
     ]
