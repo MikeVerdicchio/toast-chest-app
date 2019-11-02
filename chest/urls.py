@@ -1,8 +1,8 @@
 from django.conf.urls import url
 
-from chest import api, views
+from .views import GetRandomView, HomepageView
 
 urlpatterns = [
-    url(r"^$", views.chest, name="chest"),
-    url(r"^random.json$", views.api_get_random, name="random-toast"),
+    url(r"^$", HomepageView.as_view(), name="chest"),
+    url(r"^random.json$", GetRandomView.as_view(), name="random-toast"),
 ]
