@@ -9,6 +9,7 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 CSRF_COOKIE_SECURE = False
 X_FRAME_OPTIONS = "DENY"
+CORS_ORIGIN_ALLOW_ALL = True
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -19,11 +20,13 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "chest",
     "rest_framework",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
