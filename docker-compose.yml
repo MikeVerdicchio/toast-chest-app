@@ -5,7 +5,7 @@ services:
     build: .
     restart: on-failure
     env_file:
-      - ./.env
+      - .env
     command: >
       sh -c "python3 manage.py migrate &&
              python3 manage.py setupsuperuser &&
@@ -21,8 +21,6 @@ services:
     image: "postgres:10.3-alpine"
     restart: always
     env_file:
-      - ./.env
+      - .env
     ports:
       - "5432:5432"
-    volumes:
-      - ./postgres/data:/var/lib/postgresql/data

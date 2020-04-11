@@ -4,9 +4,7 @@ RUN mkdir /www
 WORKDIR /www
 COPY requirements.txt /www/
 
-RUN apk update
-RUN apk upgrade
-RUN apk --no-cache add \
+RUN apk update && apk --no-cache add \
     python3 \
     python3-dev \
     postgresql-client \

@@ -32,3 +32,8 @@ class GetRandomView(APIView):
         toast = get_toast_and_increment()
         serializer = ToastSerializer(toast)
         return Response(serializer.data)
+
+
+class HealthCheck(APIView):
+    def get(self, request):
+        return Response({})
